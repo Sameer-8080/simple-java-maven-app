@@ -1,0 +1,17 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      maven: 3.9.2
+    commands:
+    - apt update
+    - apt install openjdk-17-jdk -y
+  pre_build:
+    commands:
+    - mvn clean
+  build:
+    commands:
+    - mvn package
+artifacts:
+  files:
+  - target/my-app-1.0-SNAPSHOT.jar
