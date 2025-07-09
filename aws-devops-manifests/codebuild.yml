@@ -2,10 +2,9 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      maven: 3.9.2
+      java: 17
     commands:
     - apt update
-    - apt install openjdk-17-jdk -y
   pre_build:
     commands:
     - mvn clean
