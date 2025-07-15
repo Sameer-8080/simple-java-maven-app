@@ -1,4 +1,4 @@
 #!/bin/bash
-apt update
-apt install openjdk-17-jdk -y
+sudo apt-get update
+sudo apt-get install openjdk-17-jdk -y
 java --version
