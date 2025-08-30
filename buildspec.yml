@@ -1,0 +1,15 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - apt update 
+      - apt install openjdk-21-jdk -y
+  prebuild:
+    commands:
+      - mvn clean
+  build:
+    commands:
+      - mvn package
+  postbuild:
+    commands:
+      - mvn clean
