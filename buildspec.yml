@@ -4,12 +4,12 @@ phases:
     commands:
       - apt update 
       - apt install openjdk-21-jdk -y
-  prebuild:
+  pre_build:
     commands:
       - mvn clean
   build:
     commands:
       - mvn package
-  postbuild:
+  post_build:
     commands:
       - mvn clean
