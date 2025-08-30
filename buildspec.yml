@@ -2,10 +2,8 @@ version: 0.2
 phases:
   install:
     commands:
-      - apt remove java-17-amazon-corretto -y
-      - apt autoremove
       - apt update 
-      - apt install openjdk-21-jdk -y
+      - apt install openjdk-22-jre-headless -y
   pre_build:
     commands:
       - mvn clean
